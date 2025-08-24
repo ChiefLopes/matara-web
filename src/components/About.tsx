@@ -16,7 +16,7 @@ function About() {
         <p className="font-inter text-[32px] lg:text-[52px] font-[600] text-white">
         {t('aboutTitle')}
         </p>
-        <p className="font-montserrat text-[16px] lg:text-[24px] font-[400] text-[#DFDBDB]">
+        <p className="font-montserrat text-[16px] lg:text-[20px] font-[400] text-[#DFDBDB]">
           {t('aboutSubtitle')}
         </p>
       </div>

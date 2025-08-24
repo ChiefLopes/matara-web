@@ -66,13 +66,10 @@ const items: any[] = [
     a: "Matara is a new meme token inspired by positivity and bringing new users to the exciting world of Web3.",
   },
   {
-    q: "Is Matara just another meme coin?",
-    a: "Matara aims to be more than just a meme coin. While it has the lighthearted and fun aspects of meme tokens, Matara also has functionalities and a mission to onboard new users to Web3.",
-  },
-  {
     q: "What functionalities does Matara offer?",
     a: "Matara is being designed for functionalities like online tipping, social media engagement rewards, and potentially even play-to-earn games (subject to development).",
   },
+
   {
     q: "Is Matara available for purchase yet?",
     a: "The availability of Matara for purchase will depend on exchange listings and the project's roadmap. Stay updated through official Matara channels for announcements.",
@@ -86,12 +83,12 @@ const items: any[] = [
     a: "Join the Matara community by following them on X (formerly Twitter) engaging in conversations. You can also find links to the Community.",
   },
   {
-    q: "Is there a community reward system?",
-    a: "Matara may have plans for a community reward system in the future. Stay tuned for official announcements.",
-  },
-  {
     q: "What blockchain is Matara built on?",
     a: "Matara is built on Binance Smartchain, to provide faster transactions and lower fees.",
+  },
+  {
+    q: "Is there a community reward system?",
+    a: "Matara may have plans for a community reward system in the future. Stay tuned for official announcements.",
   },
   {
     q: "What is the tokenomics of Matara?",
@@ -100,5 +97,9 @@ const items: any[] = [
   {
     q: "Where can I store my Matara tokens?",
     a: " You can store your Matara tokens in a crypto wallet compatible with the BSC network e.g., MetaMask, Trust Wallet.",
+  },
+  {
+    q: "Is Matara just another meme coin?",
+    a: "Matara aims to be more than just a meme coin. While it has the lighthearted and fun aspects of meme tokens, Matara also has functionalities and a mission to onboard new users to Web3.",
   },
 ];
