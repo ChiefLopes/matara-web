@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import logo from "@/assets/svg/mlogo.svg";
-import mlogo from "@/assets/svg/mmlogo.svg";
+import logo from "@/assets/svg/mataralogo.svg";
+import mlogo from "@/assets/svg/mataralogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
@@ -24,7 +24,7 @@ function Navbar() {
               alt="logo"
               className="hidden lg:block h-[70px] w-[70px]"
             />
-            <Image src={mlogo} alt="logo" className="lg:hidden" />
+            <Image src={mlogo} alt="logo" className="lg:hidden h-10 w-10" />
           </Link>
           <div className="flex items-center space-x-[10px] lg:hidden">
             <Translate />

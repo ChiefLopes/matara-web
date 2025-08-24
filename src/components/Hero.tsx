@@ -1,33 +1,47 @@
-
-
 import React from "react";
-import pose from "@/assets/svg/mpose.svg";
-import mbg from "@/assets/svg/mherobg.svg";
 import Image from "next/image";
+import pose from "@/assets/svg/mpose.svg"; // your hero image
+import mbg from "@/assets/svg/mherobg.svg"; // optional background
 import { useTranslations } from "next-intl";
 
-
 function Hero() {
-  const t = useTranslations('Index')
+  const t = useTranslations("Index");
+
   return (
-    <div className="flex items-center justify-center bg-[primary] relative">
-      <div className=" lg:h-[900px]  flex flex-col-reverse lg:flex-row items-center justify-end relative py-[40px] lg:p-0 2xl:container">
-        <div className="z-30  relative lg:absolute top-0  w-full lg:w-[60%] left-0 lg:py-[40px] lg:pl-[40px] p-[20px] h-full">
-          <p className="gtext text-[30px] lg:text-[64px] font-montserrat font-[700] leading-[35px] lg:leading-[72px]">
-            {t('heroTitle')}
+    <section className="relative bg-[primary] overflow-hidden">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12 flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between min-h-screen">
+        {/* Left side (text) */}
+        <div className="w-full lg:w- text-center lg:text-left mt-5">
+          <h1 className="text-[32px] lg:text-[58px] font-bold leading-tight gtext">
+            {t("heroTitle")}
+          </h1>
+          <p className="mt-6 text-[18px] lg:text-[22px] text-gray-200">
+            {t("heroSubtitle")}
           </p>
-          <p className="text-[18px] lg:text-[24px] font-montserrat text-[#FFFFFF] mt-[20px] lg:mt-[30px]">
-            {t('heroSubtitle')}
-          </p>
-          <button className="gbtn p-[8px_30px] lg:p-[10px_40px] mt-[20px] lg:mt-[30px] rounded-[10px] text-[#10100B] font-inter text-[16px] lg:text-[20px] font-[600]">
-            {t('heroButton')}
+          <button className="my-8 z-20 inline-block gbtn rounded-lg px-8 py-3 text-lg font-semibold text-[#10100B]">
+            {t("heroButton")}
           </button>
         </div>
-        <Image src={pose} className="lg:h-[800px] z-20 " alt="pose" />
-        
+
+        {/* Right side (big image) */}
+        <div className="relative w-full lg:w flex justify-center lg:justify-end">
+          <Image
+            src={pose}
+            alt="pose"
+            className="w-[85%] lg:w-[120%] max-w-[1200px] h-auto object-contain z-20"
+            priority
+          />
+        </div>
       </div>
-      <Image src={mbg} className="absolute bottom-0  w-full"  alt="hero-bg" />
-    </div>
+
+      {/* Optional Background Image */}
+      <Image
+        src={mbg}
+        alt="background"
+        className="absolute bottom-0 left-0 w-full h-auto"
+        priority
+      />
+    </section>
   );
 }
 

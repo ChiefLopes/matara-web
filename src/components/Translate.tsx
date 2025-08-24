@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { FaGlobeAfrica } from "react-icons/fa";
 import React, { useTransition } from "react";
 import {
@@ -17,7 +17,7 @@ function Translate() {
 
   const localName = lang.find((l) => l.code === localActive);
   const [active, setActive] = React.useState(localName?.name);
-  
+
   const handleActive = (name: string) => {
     const nextLocale = lang.find((l) => l.name === name);
 
@@ -27,7 +27,7 @@ function Translate() {
         router.replace(`/${nextLocale.code}`);
       });
     }
-  }
+  };
   return (
     <Popover className="relative ">
       <PopoverButton className="text-[#FFFCAB] font-inter text-[16px] border-[2px] border-[#FFFCAB] p-[4px_15px] rounded-[5px] flex items-center space-x-[5px]">
@@ -35,17 +35,21 @@ function Translate() {
 
         <FaGlobeAfrica />
       </PopoverButton>
-      <PopoverPanel anchor="bottom" className="flex flex-col bg-[#05121A] rounded-[10px] z-50 mt-[20px]">
+      <PopoverPanel
+        anchor="bottom"
+        className="flex flex-col bg-[#05121A] rounded-[10px] z-50 mt-[20px]">
         <div className="p-[10px_15px] w-fit flex flex-col space-y-[10px]">
           {lang.map((l) => (
             <button
               key={l.name}
-              className={`${localName?.name === l.name ? "text-[#FFFCAB] bg-[#FFFCAB1C]  " : "text-[#10364E] border-[#10364E]"} rounded-[5px] border w-full font-inter p-[5px_20px] text-[16px] text-center`}
-              onClick={() => handleActive(l.name)}
-            >
+              className={`${
+                localName?.name === l.name
+                  ? "text-[#FFFCAB] bg-[#FFFCAB1C]  "
+                  : "text-[#10364E] border-[#10364E]"
+              } rounded-[5px] border w-full font-inter p-[5px_20px] text-[16px] text-center`}
+              onClick={() => handleActive(l.name)}>
               {l.name}
             </button>
-
           ))}
         </div>
       </PopoverPanel>
@@ -61,7 +65,6 @@ const lang = [
   { name: "Español", code: "es" },
   { name: "Dutch", code: "nl" },
 ];
-
 
 {
   /* <Popover __demoMode>

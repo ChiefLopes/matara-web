@@ -13,16 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors:{
+      colors: {
         primary: "#06131b",
-        secondary: "#FFFCAB"
+        secondary: "#FFFCAB",
       },
-      fontFamily:{
+      fontFamily: {
         inter: ["Inter", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"), // 👈 add plugin here
+  ],
 };
+
 export default config;
