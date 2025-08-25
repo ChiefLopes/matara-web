@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
     return (
       // <NextIntlClientProvider>
-      <main>{children}</main>
+      <body>{children}</body>
       // </NextIntlClientProvider>
     );
 }
