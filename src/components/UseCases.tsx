@@ -55,7 +55,7 @@ function UseCases() {
           ))}
         </div>
         <div className="flex mt-[80px] flex-col items-center justify-center">
-          <p className="font-montserrat font-[600] text-[26px] lg:text-[48px] text-white">
+          <p className="font-montserrat font-[600] text-[26px] lg:text-[48px] text-white text-center">
             What Matara Offers
           </p>
           <p className="font-montserrat font-[400] text-[18px] lg:text-[24px] text-white text-center md:max-w-5xl">

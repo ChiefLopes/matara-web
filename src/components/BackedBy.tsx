@@ -10,7 +10,7 @@ const partners = [msc, defiTiger, theWord, eagle, mftld];
 import Image from "next/image";
 function BackedBy() {
   return (
-    <div className="bg-[#D9D9D90F]  text-white mt-[100px] flex items-center justify-center">
+    <div className="bg-[#D9D9D90F]  text-white mt-[100px flex items-center justify-center">
       <div className="p-[50px_20px] lg:p-[50px] 2xl:container flex flex-col items-center justify-center">
         <p className="font-montserrat font-[600] text-[30px] lg:text-[52px] text-white">
           Backed by
