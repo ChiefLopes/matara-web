@@ -4,7 +4,7 @@ import mtthumb from "@/assets/svg/mtthumb.svg";
 import jthumb from "@/assets/svg/jthumb.svg";
 import lthumb from "@/assets/svg/lthumb.svg";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants, Transition } from "framer-motion";
 
 function Blog() {
   const blogData = [
@@ -28,7 +28,7 @@ function Blog() {
     },
   ];
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -40,7 +40,7 @@ function Blog() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: {
       opacity: 0,
       rotateX: 45,
@@ -56,7 +56,7 @@ function Blog() {
         type: "spring",
         stiffness: 100,
         damping: 15,
-      },
+      } as Transition,
     },
   };
 
@@ -102,7 +102,7 @@ function Blog() {
       </motion.p>
 
       <motion.div
-        className="mt-[40px] grid min-h-[380px] md:grid-cols-3 gap-[40px] text-white w-full lg:w-[75%]"
+        className="mt-[40px] grid min-h-[380px] md:grid-cols-3 gap-[40px] text-white w-full lg:w-[75%] lg:justify-items-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -143,7 +143,8 @@ function Blog() {
                 repeatType: "loop",
                 delay: i * 0.5,
               },
-            }}>
+            }}
+            style={{ transformStyle: "preserve-3d" }}>
             <motion.div
               className="h-[250px] overflow-hidden w-full border rounded-[10px]"
               whileHover={{ scale: 1.05 }}
