@@ -1,8 +1,7 @@
-// app/page.js
-import { redirect } from "next/navigation";
+import { redirect } from 'next/navigation'
 
 function RootPage() {
-  redirect("/"); // or '/dashboard' or whatever page you have
+  redirect('/en')   
 }
 
-export default RootPage;
+export default RootPage
