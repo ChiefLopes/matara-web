@@ -1,11 +1,11 @@
 import React from "react";
-import mfltd from "@/assets/svg/mftld.svg";
-import mlogo from "@/assets/svg/mlogo2.svg";
-import mlogo3 from "@/assets/svg/mlogo3.svg";
-import mlogo4 from "@/assets/svg/mlogo4.svg";
-import mlogo5 from "@/assets/svg/mlogo5.svg";
-import mlogo6 from "@/assets/svg/mlogo6.svg";
-import mlogo7 from "@/assets/svg/mlogo7.svg";
+import mftld from "@/assets/svg/mftld.svg";
+import eagle from "@/assets/svg/Eagle.svg";
+import defiTiger from "@/assets/svg/defi-tiger.svg";
+import theWord from "@/assets/svg/theWord.svg";
+import msc from "@/assets/svg/msc.svg";
+
+const partners = [msc, defiTiger, theWord, eagle, mftld];
 
 import Image from "next/image";
 function BackedBy() {
@@ -21,13 +21,22 @@ function BackedBy() {
         </p>
 
         <div className="mt-[40px] flex flex-row lg:justify-between w-full flex-wrap gap-[20px]">
-          <Image className="h-[35px] lg:h-full w-fit" src={mfltd} alt="mfltd" />
+          {/* <Image className="h-[35px] lg:h-full w-fit" src={mfltd} alt="mfltd" />
           <Image className="h-[32px] lg:h-full w-fit" src={mlogo} alt="mfltd" />
           <Image className="h-[32px] lg:h-full w-fit" src={mlogo3} alt="mfltd" />
           <Image className="h-[32px] lg:h-full w-fit" src={mlogo4} alt="mfltd" />
           <Image className="h-[32px] lg:h-full w-fit" src={mlogo5} alt="mfltd" />
           <Image className="h-[32px] lg:h-full w-fit" src={mlogo6} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full w-fit" src={mlogo7} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo7} alt="mfltd" /> */}
+          {partners.map((img, i) => (
+            <div key={i}>
+              <Image
+                className="h-[32px] lg:h-full w-fit"
+                src={img}
+                alt="mfltd"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
