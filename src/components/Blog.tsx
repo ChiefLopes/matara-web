@@ -61,7 +61,8 @@ function Blog() {
   };
 
   return (
-    <motion.div
+      <motion.div
+          id="blog"
       className="bg-primary flex flex-col items-center justify-center mt-[40px] p-[50px_20px] lg:p-[50px] overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

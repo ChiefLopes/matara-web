@@ -13,7 +13,7 @@ function Technology() {
   const t = useTranslations("Index");
 
   return (
-    <div className="flex items-center justify-center overflow-hidden">
+    <div id="technology" className="flex items-center justify-center overflow-hidden">
       <div className="relative flex flex-col-reverse md:flex-row gap-[40px] items-center justify-between p-[50px_20px] md:p-[50px] 2xl:container overflow-hidden">
         {/* Left side - Text Content with smooth animations */}
         <motion.div

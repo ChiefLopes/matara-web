@@ -10,7 +10,7 @@ function Hero() {
   const t = useTranslations("Index");
 
   return (
-    <section className="relative bg-[primary] overflow-hidden">
+    <section id="/" className="relative bg-[primary] overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between min-h-screen">
         {/* Left side (text) */}
         <div className="w-full lg:w- text-center lg:text-left mt-5">

@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 
 function RoadMap() {
   return (
-    <motion.div
+      <motion.div 
+          id="roadmap"
       className="container p-[50px_20px] md:p-[50px]"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}

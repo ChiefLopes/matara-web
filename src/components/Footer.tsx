@@ -12,11 +12,12 @@ import Link from "next/link";
 function Footer() {
   const links = [
     { title: "Home", href: "/" },
-    { title: "About Us", href: "/about" },
-    { title: "Contact", href: "/contact" },
-    { title: "Tokenomics", href: "/tokenomics" },
-    { title: "Roadmap", href: "/roadmap" },
-    { title: "Blog", href: "/blog" },
+    { title: "About Us", href: "#about" },
+    { title: "Technology", href: "#technology" },
+    { title: "Tokenomics", href: "#tokenomics" },
+    { title: "Roadmap", href: "#roadmap" },
+    { title: "Blog", href: "#blog" },
+    { title: "faq", href: "#faq" },
   ];
 
   const socials = [

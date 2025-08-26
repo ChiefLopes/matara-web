@@ -12,7 +12,7 @@ function FAQs() {
     setFaq(i);
   };
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div id="faq" className="flex flex-col items-center justify-center ">
       <div className="p-[50px_20px] lg:p-[50px] 2xl:container flex flex-col items-center justify-center">
         <p className="font-montserrat font-[600] text-[30px] lg:text-[52px] text-white">
           FAQs

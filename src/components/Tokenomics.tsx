@@ -5,12 +5,12 @@ import mtoken from '@/assets/svg/mobiletoken.svg'
 
 function Tokenomics() {
   return (
-    <div className="container p-[50px_20px] md:p-[50px]">
+    <div id="tokenomics" className="container p-[50px_20px] md:p-[50px]">
       <h2 className="text-4xl font-bold text-center text-white mb-[10px]">
       Tokenomics
       </h2>
       <p className="text-center text-gray-400 mb-12">
-      Initial Token Supply: 1 billion $MAT tokens
+      Initial Token Supply: 1 billion $MARS tokens
       </p>
       <div className=" w-full flex items-center justify-center">
         <Image src={token} className="hidden lg:flex" alt="" />

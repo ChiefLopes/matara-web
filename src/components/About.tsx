@@ -10,7 +10,8 @@ function About() {
   const t = useTranslations("Index");
 
   return (
-    <motion.div
+      <motion.div
+          id="about"
       className="bg-[#D9D9D90F] flex items-center justify-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

@@ -11,6 +11,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .gbtn{
   background: linear-gradient(to right, #FFFCAB , #49FFDE );
 }
