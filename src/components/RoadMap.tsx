@@ -8,7 +8,7 @@ const roadmapData = [
         key: "Quarter 3, 2025",
         title: "Launch and Organic Shilling",
         items: [
-            "Launch Matara token ($MAT) on DEXs",
+            "Launch Matara token ($MARS) on DEXs",
             "Initiate community-building",
             "Implement basic tokenomics and governance features",
             "Ramp up organic marketing efforts",

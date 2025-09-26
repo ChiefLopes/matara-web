@@ -72,7 +72,7 @@ function Tokenomics() {
                 }}
                 viewport={{ once: true, amount: 0.5 }}
             >
-                Initial Token Supply: 1 billion $MARS tokens
+                Initial Token Supply: 690 billion $MARS tokens
             </motion.p>
 
             <div
